@@ -23,3 +23,8 @@ networks:
   boptest-net:
     name: boptest-net
     attachable: true
+    ipam:
+      driver: default
+      config:
+        - subnet: "10.0.0.0/24"
+          gateway: "10.0.0.1"
